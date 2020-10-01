@@ -33,11 +33,11 @@ test:
 
 # docker section
 docker_build:
-	docker build -t go_gin_example . --network=host
+	docker build -t go_example . --network=host
 docker_run:
-	docker run -d -p 8080:8080 --name go_gin_example_srv go_gin_example:latest
+	docker run -d -p 8080:8080 --name go_example_srv go_example:latest
 docker_log:
-	docker logs -f go_gin_example_srv
+	docker logs -f go_example_srv
 
 help:
 	@echo
